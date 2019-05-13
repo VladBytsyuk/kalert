@@ -1,5 +1,12 @@
 ![KAlert](logo/kalert-logo-big.png)
 
+Dependency
+------------
+Add **this** to your module *build.gradle* file.
+```gradle
+implementation 'io.github.vladbytsyuk:kalert.lib:0.1'
+```
+
 What is it?
 -------------
 A wrapper library for ```AlertDialog``` class. 
