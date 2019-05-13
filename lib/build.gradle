@@ -1,40 +1,4 @@
-buildscript {
-    repositories {
-        jcenter()
-    }
-    dependencies {
-        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
-        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3'
-    }
-}
-
 apply plugin: 'com.android.library'
-apply plugin: 'com.github.dcendents.android-maven'
-apply plugin: 'com.jfrog.bintray'
-
-ext {
-    bintrayRepo = 'kalert'
-    bintrayName = 'kalert'
-
-    publishedGroupId = 'io.github.vladbytsyuk'
-    libraryName = 'KAlert'
-    artifact = 'kalert.lib'
-
-    libraryDescription = 'Android library. Wrapper for AlertDialog class on Kotlin with coroutines.'
-
-    siteUrl = 'https://github.com/VladBytsyuk/kalert'
-    gitUrl = 'https://github.com/VladBytsyuk/kalert.git'
-
-    libraryVersion = '0.1'
-
-    developerId = 'Vladislav Bytsyuk <vladislav.bytsyuk@gmail.com>'
-    developerName = 'Vladislav Bytsyuk'
-    developerEmail = 'vladislav.bytsyuk@gmail.com'
-
-    licenseName = 'The Apache Software License, Version 2.0'
-    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-    allLicenses = ["Apache-2.0"]
-}
 
 android {
     compileSdkVersion 28
@@ -70,5 +34,3 @@ dependencies {
 
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.1.1"
 }
-
-apply from: 'publish.gradle'
